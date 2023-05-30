@@ -39,6 +39,7 @@ p {
 .fascia {
   background-color: #4d6053;
   height: 120px;
+  min-width: 300px;
 }
 .fascia .safe span {
   position: absolute;
@@ -59,6 +60,7 @@ body {
 header {
   height: 80px;
   width: 100%;
+  min-width: 300px;
   background-color: #4d6053;
   position: fixed;
   top: 0px;
@@ -105,14 +107,14 @@ header nav ul li.button:hover a {
 
 .focus {
   margin-top: 80px;
-  height: calc(100vh - 80px);
-  width: 100vw;
+  height: calc(100dvh - 80px);
+  width: 100dvw;
   background-image: url(../img/focus.jpeg);
   background-size: cover;
   background-position: center;
 }
 .focus .flex-container {
-  height: calc(100vh - 80px);
+  height: calc(100dvh - 80px);
   text-align: right;
   display: flex;
   justify-content: center;
@@ -122,9 +124,364 @@ header nav ul li.button:hover a {
   color: #F4F5F5;
 }
 
-@media only screen and (min-width: 500px) and (max-width: 900px) {
+.personalizza .img {
+  background-image: url(../img/personalizza.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.migliora-la-tua-vita .img {
+  background-image: url(../img/migliora-la-tua-vita.jpeg);
+  background-size: cover;
+  background-position: 70% 50%;
+}
+
+.lavoriamo-al-futuro .img {
+  background-image: url(../img/futuro.jpeg);
+  background-size: cover;
+  background-position: left;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.img, .text {
+  height: 300px;
+  width: 100%;
+}
+
+.text {
+  min-width: 300px;
+}
+.text p, .text h3 {
+  padding: 0 20px;
+}
+
+.text.flex-container {
+  align-content: space-evenly;
+  justify-content: center;
+}
+
+.la-nostra-visione .background {
+  background-image: url(../img/la-nostra-visione.jpg);
+  background-size: cover;
+  background-position: right;
+}
+.la-nostra-visione .background > .flex-container {
+  height: calc(100dvh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-background {
+  padding: 10px 0 30px 0;
+  width: 95%;
+  height: 95%;
+  background-color: #F4F5F5;
+  opacity: 0.8;
+}
+.text-background p {
+  font-size: 12px;
+}
+.text-background ul, .text-background h3, .text-background p {
+  width: 85%;
+}
+.text-background p strong {
+  font-weight: 600;
+}
+.text-background ul {
+  list-style-type: "☀";
+  color: #4d6053;
+  font-size: 12px;
+  padding-left: 15px;
+}
+.text-background ul li {
+  padding-left: 15px;
+}
+
+.text-background.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+input[type=email] {
+  width: 65%;
+  padding: 10px;
+  border: 2px solid #4d6053;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+input[type=email]::-moz-placeholder {
+  color: #4d6053;
+}
+
+input[type=email]::placeholder {
+  color: #4d6053;
+}
+
+input[type=submit] {
+  color: #4d6053;
+  padding: 10px;
+  border: 2px solid #4d6053;
+  border-radius: 5px;
+  width: 30%;
+}
+
+input[type=submit]:hover, input[type=submit]:focus-visible {
+  background-color: #4d6053;
+  color: #F4F5F5;
+}
+
+.cofound-one .img {
+  background-image: url(../img/team/james-armstrong.jpeg);
+  background-size: cover;
+  background-position: 70% 70%;
+}
+
+.cofound-two .img {
+  background-image: url(../img/team/marina-hightower.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.team {
+  background-color: #F4F5F5;
+}
+.team .flex-container {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll {
+  background-color: #4d6053;
+  height: 300px;
+  width: 70dvw;
+  min-width: 250px;
+  overflow-x: scroll;
+}
+
+.container {
+  width: 3150px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.person {
+  width: 210px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.person p {
+  text-align: center;
+  color: #F4F5F5;
+}
+
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #F4F5F5;
+}
+
+.person.one .photo {
+  background-image: url(../img/team/rachel-gonzalez.jpeg);
+  background-size: cover;
+  background-position: right;
+}
+
+.person.two .photo {
+  background-image: url(../img/team/danielle-hobbs.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.person.three .photo {
+  background-image: url(../img/team/andrew-arnold.jpeg);
+  background-size: cover;
+  background-position: top;
+}
+
+.person.four .photo {
+  background-image: url(../img/team/stacy-vaughn.jpeg);
+  background-size: cover;
+  background-position: top;
+}
+
+.person.five .photo {
+  background-image: url(../img/team/lauren-moore.jpeg);
+  background-size: cover;
+  background-position: top right;
+}
+
+.person.six .photo {
+  background-image: url(../img/team/keith-davis.jpeg);
+  background-size: cover;
+  background-position: 30% 30%;
+}
+
+.person.seven .photo {
+  background-image: url(../img/team/erica-bonilla.jpeg);
+  background-size: cover;
+  background-position: top;
+}
+
+.person.eight .photo {
+  background-image: url(../img/team/adam-mccormick.jpeg);
+  background-size: cover;
+  background-position: top center;
+}
+
+.person.nine .photo {
+  background-image: url(../img/team/nathan-austin.jpeg);
+  background-size: cover;
+  background-position: top right;
+}
+
+.person.ten .photo {
+  background-image: url(../img/team/cynthia-norman.jpeg);
+  background-size: cover;
+  background-position: 60% 50%;
+}
+
+.person.ten-one .photo {
+  background-image: url(../img/team/patrick-kim.jpg);
+  background-size: cover;
+  background-position: top right;
+}
+
+.person.ten-two .photo {
+  background-image: url(../img/team/chase-curry.jpeg);
+  background-size: cover;
+  background-position: top center;
+}
+
+.person.ten-three .photo {
+  background-image: url(../img/team/jane-harris.jpeg);
+  background-size: cover;
+  background-position: top center;
+}
+
+.person.ten-four .photo {
+  background-image: url(../img/team/tanner-casey.jpeg);
+  background-size: cover;
+  background-position: top center;
+}
+
+.person.ten-five .photo {
+  background-image: url(../img/team/robert-mccullough.jpeg);
+  background-size: cover;
+  background-position: top center;
+}
+
+.download .safe > .flex-container {
+  height: 350px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.app.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ios img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.android img {
+  width: 200px;
+}
+
+footer {
+  background-color: #4d6053;
+}
+footer .col {
+  height: auto;
+  width: 100%;
+}
+footer p {
+  color: #F4F5F5;
+}
+footer .contact p {
+  text-align: center;
+}
+footer .contact p, footer .contact-application {
+  font-weight: 500;
+  font-size: 20px;
+}
+footer .application span {
+  font-size: 16px;
+}
+footer .application a {
+  text-decoration: none;
+  color: #F4F5F5;
+  font-weight: 600;
+}
+footer .application a:hover {
+  text-decoration: underline;
+}
+footer .logo-container {
+  width: 350px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .logo-container img {
+  width: 70px;
+}
+footer .logo-container .instagram {
+  width: 60px;
+}
+footer .col > .flex-container {
+  height: 200px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
   h1 {
     font-size: 45px;
+  }
+  .img, .text {
+    height: 500px;
+    flex: 1;
+    width: 50%;
+  }
+  .migliora-la-tua-vita.flex-container, .cofound-two.flex-container {
+    flex-direction: row-reverse;
+  }
+  .cofound-one h3, .cofound-two h3 {
+    font-size: 42px;
+  }
+  .app.flex-container {
+    flex-direction: row;
+  }
+  .ios img {
+    margin-bottom: 0px;
+    margin-right: 50px;
+  }
+  .android img {
+    width: 210px;
   }
 }
 @media only screen and (min-width: 901px) {
@@ -143,38 +500,6 @@ header nav ul li.button:hover a {
   p {
     font-size: 18px;
   }
-  .fascia {
-    background-color: #4d6053;
-    height: 120px;
-  }
-  .fascia .safe span {
-    position: absolute;
-    top: -80px;
-  }
-  .come-funziona h2, .la-nostra-visione h2, .conosci-il-team h2, .download h2 {
-    position: relative;
-    top: 140px;
-    left: 40dvw;
-    transform: translate(-50%, -50%);
-  }
-  .personalizza, .migliora-la-tua-vita, .lavoriamo-al-futuro, .cofound-one, .cofound-two {
-    display: flex;
-    flex-basis: 50%;
-  }
-  .come-funziona > .flex-container, .conosci-il-team > .flex-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .col {
-    width: 50%;
-    height: 500px;
-  }
-  .img.col {
-    background-color: #4d6053;
-  }
-  .text.col {
-    background-color: #F4F5F5;
-  }
   header nav ul li {
     margin-left: 30px;
   }
@@ -185,308 +510,33 @@ header nav ul li.button:hover a {
     border-top: 1px solid #F4F5F5;
     border-bottom: 1px solid #F4F5F5;
   }
-  .focus {
-    margin-top: 80px;
-    height: calc(100vh - 80px);
-    width: 100vw;
-    background-image: url(../img/focus.jpeg);
-    background-size: cover;
-    background-position: center;
+  .img, .text {
+    height: 500px;
+    flex: 1;
+    width: 50%;
+    max-width: 1600px;
   }
-  .focus .flex-container {
-    height: calc(100vh - 80px);
-    text-align: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .migliora-la-tua-vita.flex-container, .cofound-two.flex-container {
+    flex-direction: row-reverse;
   }
-  .focus h3 {
-    color: #F4F5F5;
-  }
-  .personalizza .img {
-    background-image: url(../img/personalizza.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  .migliora-la-tua-vita .img {
-    background-image: url(../img/migliora-la-tua-vita.jpeg);
-    background-size: cover;
-    background-position: center;
-  }
-  .lavoriamo-al-futuro .img {
-    background-image: url(../img/futuro.jpeg);
-    background-size: cover;
-    background-position: left;
-  }
-  .come-funziona h3, .conosci-il-team h3 {
-    font-weight: 600;
-    padding-bottom: 50px;
-  }
-  .personalizza > .flex-container, .lavoriamo-al-futuro > .flex-container, .cofound-one > .flex-container {
-    width: 400px;
-    margin-left: 50px;
-    display: flex;
-    align-items: center;
-  }
-  .migliora-la-tua-vita > .flex-container, .cofound-two > .flex-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  .migliora-la-tua-vita-text, .cofound-two-text {
-    width: 400px;
-    margin-right: 50px;
-  }
-  .la-nostra-visione .background {
-    background-image: url(../img/la-nostra-visione.jpg);
-    background-size: cover;
-    background-position: right;
-  }
-  .la-nostra-visione .background > .flex-container {
-    height: calc(100vh - 80px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .text-background {
-    padding: 10px 0 30px 0;
-    width: 80%;
-    height: 550px;
-    background-color: #F4F5F5;
-    opacity: 0.8;
-  }
-  .text-background.flex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .text-background ul, .text-background h3, .text-background p {
-    width: 85%;
-  }
-  .text-background p strong {
-    font-weight: 600;
-  }
-  .text-background ul {
-    list-style-type: "☀";
-    color: #4d6053;
+  .text-background p, .text-background ul {
     font-size: 18px;
-    padding-left: 35px;
-  }
-  .text-background ul li {
-    padding-left: 15px;
-  }
-  input[type=email] {
-    width: 200px;
-    padding: 10px;
-    border: 2px solid #4d6053;
-    border-radius: 5px;
-  }
-  input[type=email]::-moz-placeholder {
-    color: #4d6053;
-  }
-  input[type=email]::placeholder {
-    color: #4d6053;
-  }
-  input[type=submit] {
-    color: #4d6053;
-    padding: 10px;
-    border: 2px solid #4d6053;
-    border-radius: 5px;
-  }
-  input[type=submit]:hover, input[type=submit]:focus-visible {
-    background-color: #4d6053;
-    color: #F4F5F5;
-  }
-  .cofound-one .img {
-    background-image: url(../img/team/james-armstrong.jpeg);
-    background-size: cover;
-    background-position: center;
-  }
-  .cofound-two .img {
-    background-image: url(../img/team/marina-hightower.jpg);
-    background-size: cover;
-    background-position: top;
-  }
-  .team {
-    background-color: #F4F5F5;
-  }
-  .team .flex-container {
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .scroll {
-    background-color: #4d6053;
-    height: 300px;
-    width: 750px;
-    overflow-x: scroll;
-  }
-  .container {
-    width: 3150px;
-    display: flex;
-    justify-content: flex-start;
-  }
-  .person {
-    width: 210px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .person p {
-    text-align: center;
-    color: #F4F5F5;
-  }
-  .photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #F4F5F5;
-  }
-  .person.one .photo {
-    background-image: url(../img/team/rachel-gonzalez.jpeg);
-    background-size: cover;
-    background-position: right;
-  }
-  .person.two .photo {
-    background-image: url(../img/team/danielle-hobbs.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  .person.three .photo {
-    background-image: url(../img/team/andrew-arnold.jpeg);
-    background-size: cover;
-    background-position: top;
-  }
-  .person.four .photo {
-    background-image: url(../img/team/stacy-vaughn.jpeg);
-    background-size: cover;
-    background-position: top;
-  }
-  .person.five .photo {
-    background-image: url(../img/team/lauren-moore.jpeg);
-    background-size: cover;
-    background-position: top right;
-  }
-  .person.six .photo {
-    background-image: url(../img/team/keith-davis.jpeg);
-    background-size: cover;
-    background-position: 30% 30%;
-  }
-  .person.seven .photo {
-    background-image: url(../img/team/erica-bonilla.jpeg);
-    background-size: cover;
-    background-position: top;
-  }
-  .person.eight .photo {
-    background-image: url(../img/team/adam-mccormick.jpeg);
-    background-size: cover;
-    background-position: top center;
-  }
-  .person.nine .photo {
-    background-image: url(../img/team/nathan-austin.jpeg);
-    background-size: cover;
-    background-position: top right;
-  }
-  .person.ten .photo {
-    background-image: url(../img/team/cynthia-norman.jpeg);
-    background-size: cover;
-    background-position: 60% 50%;
-  }
-  .person.ten-one .photo {
-    background-image: url(../img/team/patrick-kim.jpg);
-    background-size: cover;
-    background-position: top right;
-  }
-  .person.ten-two .photo {
-    background-image: url(../img/team/chase-curry.jpeg);
-    background-size: cover;
-    background-position: top center;
-  }
-  .person.ten-three .photo {
-    background-image: url(../img/team/jane-harris.jpeg);
-    background-size: cover;
-    background-position: top center;
-  }
-  .person.ten-four .photo {
-    background-image: url(../img/team/tanner-casey.jpeg);
-    background-size: cover;
-    background-position: top center;
-  }
-  .person.ten-five .photo {
-    background-image: url(../img/team/robert-mccullough.jpeg);
-    background-size: cover;
-    background-position: top center;
-  }
-  .download .safe > .flex-container {
-    height: 350px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
   }
   .app.flex-container {
-    display: flex;
+    flex-direction: row;
   }
   .ios img {
-    width: 200px;
+    margin-bottom: 0px;
     margin-right: 50px;
   }
   .android img {
     width: 210px;
   }
-  footer {
-    background-color: #4d6053;
-  }
   footer .col {
-    height: auto;
-  }
-  footer p {
-    color: #F4F5F5;
-  }
-  footer .contact p {
-    text-align: center;
-  }
-  footer .contact p, footer .contact-application {
-    font-weight: 500;
-    font-size: 20px;
-  }
-  footer .application span {
-    font-size: 16px;
-  }
-  footer .application a {
-    text-decoration: none;
-    color: #F4F5F5;
-    font-weight: 600;
-  }
-  footer .application a:hover {
-    text-decoration: underline;
-  }
-  footer .logo-container {
-    width: 350px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  footer .logo-container img {
-    width: 70px;
-  }
-  footer .logo-container .instagram {
-    width: 60px;
-  }
-  footer .safe.flex-container {
-    display: flex;
+    width: 50%;
   }
   footer .col > .flex-container {
     height: 300px;
     padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
   }
 }
