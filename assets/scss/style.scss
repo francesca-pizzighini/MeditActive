@@ -259,15 +259,17 @@ input[type=email]::placeholder{
 }
 
 input[type=submit]{
-    color: $primary; 
+    color: $secondary; 
+    background-color: $primary;
     padding: 10px;
     border: 2px solid $primary;
     border-radius: 5px;
     width: 30%;
+    cursor: pointer;
 }
 
 input[type=submit]:hover, input[type=submit]:focus-visible{
-    background-color: $primary;
+    background-color: #2f3c33;
     color: $secondary;
 }
 

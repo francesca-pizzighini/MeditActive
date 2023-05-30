@@ -227,15 +227,17 @@ input[type=email]::placeholder {
 }
 
 input[type=submit] {
-  color: #4d6053;
+  color: #F4F5F5;
+  background-color: #4d6053;
   padding: 10px;
   border: 2px solid #4d6053;
   border-radius: 5px;
   width: 30%;
+  cursor: pointer;
 }
 
 input[type=submit]:hover, input[type=submit]:focus-visible {
-  background-color: #4d6053;
+  background-color: #2f3c33;
   color: #F4F5F5;
 }
 
